@@ -3,10 +3,11 @@
 
     //안드로이드 앱으로부터 아래 값들을 받음
     $name = $_POST['name'];
+    $nameCheck = $_POST['nameCheck'];
 
     //insert 쿼리문을 실행함
-    $statement = mysqli_prepare($con, "INSERT INTO search VALUES (?)");
-    mysqli_stmt_bind_param($statement, "s", $name);
+    $statement = mysqli_prepare($con, "INSERT INTO search VALUES (?, ?)");
+    mysqli_stmt_bind_param($statement, "ss", $name, $nameCheck);
     mysqli_stmt_execute($statement);
 
     $response = array();
