@@ -1,6 +1,4 @@
 <?php
-    $con = mysqli_connect("localhost", "davichiar1", "a1b1c1**", "davichiar1");
-
     $userID = $_POST["userID"];
 
     $statement = mysqli_prepare($con, "SELECT userID FROM USER WHERE userID = ?");

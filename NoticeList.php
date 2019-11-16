@@ -8,7 +8,6 @@
         $output[] = array_map('convert_euckr_to_utf8', $e); 
     } 
  
-    $con = mysqli_connect("localhost", "davichiar1", "a1b1c1**", "davichiar1");
 
     $result = mysqli_query($con, "SELECT * FROM CONTEXT");
     $response = array();

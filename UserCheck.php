@@ -1,6 +1,4 @@
 <?php
-    $con = mysqli_connect("localhost", "davichiar1", "a1b1c1**", "davichiar1");
-
     //안드로이드 앱으로부터 아래 값들을 받음
     $userID = $_POST['userID'];
     $userCheck = $_POST['userCheck'];
